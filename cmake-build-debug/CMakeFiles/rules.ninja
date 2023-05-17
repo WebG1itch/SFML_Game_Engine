@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: CrystalienPlus
+# Project: SFML_Game_Engine
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__CrystalienPlus_Debug
+rule CXX_COMPILER__SFML_Game_Engine_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = C:\msys64\mingw64-7.3.0\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule CXX_COMPILER__CrystalienPlus_Debug
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__CrystalienPlus_Debug
+rule CXX_EXECUTABLE_LINKER__SFML_Game_Engine_Debug
   command = cmd.exe /C "$PRE_LINK && C:\msys64\mingw64-7.3.0\mingw64\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -51,7 +51,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\ninja\win\x64\ninja.exe" $FILE_ARG -t clean $TARGETS
+  command = C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\ninja\win\x64\ninja.exe $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -59,6 +59,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\ninja\win\x64\ninja.exe" -t targets
+  command = C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\ninja\win\x64\ninja.exe -t targets
   description = All primary targets available:
 

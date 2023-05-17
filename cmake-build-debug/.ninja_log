@@ -1,3 +1,5 @@
 # ninja log v5
-1	934	7060516765152825	CMakeFiles/CrystalienPlus.dir/src/main.cpp.obj	af03456a35ba25ee
-938	1166	7060516767380710	CrystalienPlus.exe	710d6e903ef7f329
+5	321	7060588527903362	build.ninja	3f8aaebffd135a12
+1	1415	7060587841680798	CMakeFiles/SFML_Game_Engine.dir/main.cpp.obj	d30fa686d2503959
+1427	1866	7060587846143450	SFML_Game_Engine.exe	c6c8c3b878257825
+2	325	7060588527903362	build.ninja	3f8aaebffd135a12

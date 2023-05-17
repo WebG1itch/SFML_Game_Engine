@@ -113,13 +113,13 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/Jake/Documents/SFML Development
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/CrystalienPlus
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/SFML_Game_Engine
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/msys64/mingw64-7.3.0/mingw64/bin/ld.exe
 
 //make program
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/Program Files/JetBrains/CLion 2021.2.2/bin/ninja/win/x64/ninja.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/ninja/win/x64/ninja.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -157,7 +157,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=CrystalienPlus
+CMAKE_PROJECT_NAME:STATIC=SFML_Game_Engine
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/msys64/mingw64-7.3.0/mingw64/bin/ranlib.exe
@@ -239,15 +239,6 @@ CMAKE_STRIP:FILEPATH=C:/msys64/mingw64-7.3.0/mingw64/bin/strip.exe
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Value Computed by CMake
-CrystalienPlus_BINARY_DIR:STATIC=C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/cmake-build-debug
-
-//Value Computed by CMake
-CrystalienPlus_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-CrystalienPlus_SOURCE_DIR:STATIC=C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine
-
 //Path to a library.
 FLAC_LIB:FILEPATH=C:/SFML/lib/libFLAC.a
 
@@ -260,8 +251,20 @@ Ogg_LIB:FILEPATH=C:/SFML/lib/libogg.a
 //Path to a library.
 OpenAL_LIB:FILEPATH=C:/SFML/lib/libopenal32.a
 
+//The directory containing a CMake configuration file for SFML.
+SFML_DIR:PATH=SFML_DIR-NOTFOUND
+
 //Path to a file.
 SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
+
+//Value Computed by CMake
+SFML_Game_Engine_BINARY_DIR:STATIC=C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/cmake-build-debug
+
+//Value Computed by CMake
+SFML_Game_Engine_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+SFML_Game_Engine_SOURCE_DIR:STATIC=C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine
 
 //Path to a library.
 VorbisEnc_LIB:FILEPATH=C:/SFML/lib/libvorbisenc.a
