@@ -56,6 +56,27 @@ build CMakeFiles/SFML_Game_Engine.dir/main.cpp.obj: CXX_COMPILER__SFML_Game_Engi
   OBJECT_DIR = CMakeFiles\SFML_Game_Engine.dir
   OBJECT_FILE_DIR = CMakeFiles\SFML_Game_Engine.dir
 
+build CMakeFiles/SFML_Game_Engine.dir/Core/GameLoop.cpp.obj: CXX_COMPILER__SFML_Game_Engine_Debug C$:/Users/Jake/Documents/SFML$ Development/Projects/SFML_Game_Engine/Core/GameLoop.cpp || cmake_object_order_depends_target_SFML_Game_Engine
+  DEP_FILE = CMakeFiles\SFML_Game_Engine.dir\Core\GameLoop.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
+  INCLUDES = -I"C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/headers" -I/usr/include -IC:/SFML/include
+  OBJECT_DIR = CMakeFiles\SFML_Game_Engine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SFML_Game_Engine.dir\Core
+
+build CMakeFiles/SFML_Game_Engine.dir/Core/Window.cpp.obj: CXX_COMPILER__SFML_Game_Engine_Debug C$:/Users/Jake/Documents/SFML$ Development/Projects/SFML_Game_Engine/Core/Window.cpp || cmake_object_order_depends_target_SFML_Game_Engine
+  DEP_FILE = CMakeFiles\SFML_Game_Engine.dir\Core\Window.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
+  INCLUDES = -I"C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/headers" -I/usr/include -IC:/SFML/include
+  OBJECT_DIR = CMakeFiles\SFML_Game_Engine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SFML_Game_Engine.dir\Core
+
+build CMakeFiles/SFML_Game_Engine.dir/Core/EventManager.cpp.obj: CXX_COMPILER__SFML_Game_Engine_Debug C$:/Users/Jake/Documents/SFML$ Development/Projects/SFML_Game_Engine/Core/EventManager.cpp || cmake_object_order_depends_target_SFML_Game_Engine
+  DEP_FILE = CMakeFiles\SFML_Game_Engine.dir\Core\EventManager.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
+  INCLUDES = -I"C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/headers" -I/usr/include -IC:/SFML/include
+  OBJECT_DIR = CMakeFiles\SFML_Game_Engine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SFML_Game_Engine.dir\Core
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SFML_Game_Engine
@@ -64,7 +85,7 @@ build CMakeFiles/SFML_Game_Engine.dir/main.cpp.obj: CXX_COMPILER__SFML_Game_Engi
 #############################################
 # Link the executable SFML_Game_Engine.exe
 
-build SFML_Game_Engine.exe: CXX_EXECUTABLE_LINKER__SFML_Game_Engine_Debug CMakeFiles/SFML_Game_Engine.dir/main.cpp.obj
+build SFML_Game_Engine.exe: CXX_EXECUTABLE_LINKER__SFML_Game_Engine_Debug CMakeFiles/SFML_Game_Engine.dir/main.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Core/GameLoop.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Core/Window.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Core/EventManager.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SFML_Game_Engine.dir

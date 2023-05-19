@@ -1,9 +1,5 @@
 "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S "C:\Users\Jake\Documents\SFML Development\Projects\SFML_Game_Engine" -B "C:\Users\Jake\Documents\SFML Development\Projects\SFML_Game_Engine\cmake-build-debug"
 -- Found SFML 2.5.1 in C:/SFML/lib/cmake/SFML
-CMake Error at CMakeLists.txt:20 (file):
-  file COPY cannot find "C:/Users/Jake/Documents/SFML
-  Development/Projects/SFML_Game_Engine/assets": No error.
-
-
--- Configuring incomplete, errors occurred!
-See also "C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/cmake-build-debug

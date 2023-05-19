@@ -3,7 +3,7 @@ project(SFML_Game_Engine)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(SFML_Game_Engine main.cpp)
+add_executable(SFML_Game_Engine main.cpp Core/GameLoop.cpp Core/GameLoop.h Core/GameLoop.cpp Core/GameLoop.cpp Core/Window.cpp Core/Window.h Core/EventManager.h Core/EventManager.cpp)
 
 include_directories(headers /usr/include C:/SFML/include)
 
