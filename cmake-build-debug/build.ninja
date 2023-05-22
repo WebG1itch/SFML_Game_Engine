@@ -50,30 +50,34 @@ cmake_ninja_workdir = C$:/Users/Jake/Documents/SFML$ Development/Projects/SFML_G
 build cmake_object_order_depends_target_SFML_Game_Engine: phony || CMakeFiles/SFML_Game_Engine.dir
 
 build CMakeFiles/SFML_Game_Engine.dir/main.cpp.obj: CXX_COMPILER__SFML_Game_Engine_Debug C$:/Users/Jake/Documents/SFML$ Development/Projects/SFML_Game_Engine/main.cpp || cmake_object_order_depends_target_SFML_Game_Engine
+  DEFINES = -DSFML_STATIC
   DEP_FILE = CMakeFiles\SFML_Game_Engine.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
-  INCLUDES = -I"C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/headers" -I/usr/include -IC:/SFML/include
+  INCLUDES = -I"C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/headers" -I/usr/include -isystem C:/SFML/include
   OBJECT_DIR = CMakeFiles\SFML_Game_Engine.dir
   OBJECT_FILE_DIR = CMakeFiles\SFML_Game_Engine.dir
 
 build CMakeFiles/SFML_Game_Engine.dir/Core/GameLoop.cpp.obj: CXX_COMPILER__SFML_Game_Engine_Debug C$:/Users/Jake/Documents/SFML$ Development/Projects/SFML_Game_Engine/Core/GameLoop.cpp || cmake_object_order_depends_target_SFML_Game_Engine
+  DEFINES = -DSFML_STATIC
   DEP_FILE = CMakeFiles\SFML_Game_Engine.dir\Core\GameLoop.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
-  INCLUDES = -I"C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/headers" -I/usr/include -IC:/SFML/include
+  INCLUDES = -I"C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/headers" -I/usr/include -isystem C:/SFML/include
   OBJECT_DIR = CMakeFiles\SFML_Game_Engine.dir
   OBJECT_FILE_DIR = CMakeFiles\SFML_Game_Engine.dir\Core
 
 build CMakeFiles/SFML_Game_Engine.dir/Core/Window.cpp.obj: CXX_COMPILER__SFML_Game_Engine_Debug C$:/Users/Jake/Documents/SFML$ Development/Projects/SFML_Game_Engine/Core/Window.cpp || cmake_object_order_depends_target_SFML_Game_Engine
+  DEFINES = -DSFML_STATIC
   DEP_FILE = CMakeFiles\SFML_Game_Engine.dir\Core\Window.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
-  INCLUDES = -I"C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/headers" -I/usr/include -IC:/SFML/include
+  INCLUDES = -I"C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/headers" -I/usr/include -isystem C:/SFML/include
   OBJECT_DIR = CMakeFiles\SFML_Game_Engine.dir
   OBJECT_FILE_DIR = CMakeFiles\SFML_Game_Engine.dir\Core
 
 build CMakeFiles/SFML_Game_Engine.dir/Core/EventManager.cpp.obj: CXX_COMPILER__SFML_Game_Engine_Debug C$:/Users/Jake/Documents/SFML$ Development/Projects/SFML_Game_Engine/Core/EventManager.cpp || cmake_object_order_depends_target_SFML_Game_Engine
+  DEFINES = -DSFML_STATIC
   DEP_FILE = CMakeFiles\SFML_Game_Engine.dir\Core\EventManager.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
-  INCLUDES = -I"C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/headers" -I/usr/include -IC:/SFML/include
+  INCLUDES = -I"C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/headers" -I/usr/include -isystem C:/SFML/include
   OBJECT_DIR = CMakeFiles\SFML_Game_Engine.dir
   OBJECT_FILE_DIR = CMakeFiles\SFML_Game_Engine.dir\Core
 
@@ -85,9 +89,9 @@ build CMakeFiles/SFML_Game_Engine.dir/Core/EventManager.cpp.obj: CXX_COMPILER__S
 #############################################
 # Link the executable SFML_Game_Engine.exe
 
-build SFML_Game_Engine.exe: CXX_EXECUTABLE_LINKER__SFML_Game_Engine_Debug CMakeFiles/SFML_Game_Engine.dir/main.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Core/GameLoop.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Core/Window.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Core/EventManager.cpp.obj
+build SFML_Game_Engine.exe: CXX_EXECUTABLE_LINKER__SFML_Game_Engine_Debug CMakeFiles/SFML_Game_Engine.dir/main.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Core/GameLoop.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Core/Window.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Core/EventManager.cpp.obj | C$:/SFML/lib/libsfml-audio-s-d.a C$:/SFML/lib/libsfml-network-s-d.a C$:/SFML/lib/libsfml-graphics-s-d.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libsfml-system-s-d.a C$:/SFML/lib/libopenal32.a C$:/SFML/lib/libvorbisfile.a C$:/SFML/lib/libvorbisenc.a C$:/SFML/lib/libvorbis.a C$:/SFML/lib/libogg.a C$:/SFML/lib/libFLAC.a C$:/SFML/lib/libfreetype.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = C:/SFML/lib/libsfml-audio-s-d.a  C:/SFML/lib/libsfml-network-s-d.a  C:/SFML/lib/libsfml-graphics-s-d.a  C:/SFML/lib/libsfml-window-s-d.a  C:/SFML/lib/libsfml-system-s-d.a  C:/SFML/lib/libopenal32.a  C:/SFML/lib/libvorbisfile.a  C:/SFML/lib/libvorbisenc.a  C:/SFML/lib/libvorbis.a  C:/SFML/lib/libogg.a  C:/SFML/lib/libFLAC.a  -lws2_32  -lwinmm  -lgdi32  -lOpenGL32  C:/SFML/lib/libfreetype.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SFML_Game_Engine.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

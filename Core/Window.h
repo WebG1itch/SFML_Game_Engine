@@ -15,7 +15,7 @@ class Window {
 public:
     Window();
     Window(const std::string& title, sf::Vector2u size, bool fullscreen = false);
-    ~Window() { Destroy(); }
+    ~Window() { renderWindow.close(); }
 
     // Beginning of frame calculation. Clears previous frame
     void BeginDraw() { renderWindow.clear(sf::Color::Black); }
@@ -26,14 +26,19 @@ public:
     // Updating for events
     void Update();
 
+    void Setup(const std::string& title, sf::Vector2u size, bool fullscreen = false);
+
     // Destroys the window and recreates in the new bFullscreen mode
     void ToggleFullScreen(EventDetails* details);
 
-    bool IsFocused();
-    EventManager* GetEventManager();
+    bool IsFocused() const { return bIsFocused; }
+    EventManager* GetEventManager() { return &eventManager; }
+
+    bool IsDone() const { return bIsDone; }
 
     void Close(EventDetails* details = nullptr) { bIsDone = true; }
 
+    sf::RenderWindow* GetRenderWindow() { return &renderWindow; }
 
 private:
     // Creates a new window with current properties

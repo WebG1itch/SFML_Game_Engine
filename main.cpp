@@ -1,6 +1,13 @@
-#include <iostream>
-
+#include "Core/GameLoop.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    GameLoop Game;
+    while(!Game.GetWindow()->IsDone()) {
+        // Game loop stuff :D
+        //Game.HandleInput();
+        Game.Update();
+        Game.Render();
+        Game.RestartClock();
+    }
     return 0;
 }

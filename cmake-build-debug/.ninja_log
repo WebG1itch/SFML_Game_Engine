@@ -1,4 +1,19 @@
 # ninja log v5
-2	325	7061435593664527	build.ninja	3f8aaebffd135a12
-1	1415	7060587841680798	CMakeFiles/SFML_Game_Engine.dir/main.cpp.obj	d30fa686d2503959
-1427	1866	7060587846143450	SFML_Game_Engine.exe	c6c8c3b878257825
+2	326	7063807203074348	build.ninja	3f8aaebffd135a12
+28	2048	7064238075824978	CMakeFiles/SFML_Game_Engine.dir/Core/Window.cpp.obj	5a27612e5944e148
+6	1831	7064238073642954	CMakeFiles/SFML_Game_Engine.dir/main.cpp.obj	4b53248cacff0e33
+2456	3737	7064238092581412	SFML_Game_Engine.exe	f82350f463e19ec2
+19	1932	7064238074642146	CMakeFiles/SFML_Game_Engine.dir/Core/GameLoop.cpp.obj	b75fc8bbfad562b0
+39	2456	7064238079886921	CMakeFiles/SFML_Game_Engine.dir/Core/EventManager.cpp.obj	73fae1cea0304077
+7	1981	7064238346942173	CMakeFiles/SFML_Game_Engine.dir/Core/GameLoop.cpp.obj	b75fc8bbfad562b0
+19	1990	7064238347033842	CMakeFiles/SFML_Game_Engine.dir/Core/Window.cpp.obj	5a27612e5944e148
+1991	3327	7064238360274807	SFML_Game_Engine.exe	f82350f463e19ec2
+8	2024	7064240445784956	CMakeFiles/SFML_Game_Engine.dir/main.cpp.obj	4b53248cacff0e33
+19	2429	7064240449827674	CMakeFiles/SFML_Game_Engine.dir/Core/GameLoop.cpp.obj	b75fc8bbfad562b0
+29	2463	7064240450154118	CMakeFiles/SFML_Game_Engine.dir/Core/Window.cpp.obj	5a27612e5944e148
+40	2547	7064240450966536	CMakeFiles/SFML_Game_Engine.dir/Core/EventManager.cpp.obj	73fae1cea0304077
+2548	3897	7064240464400057	SFML_Game_Engine.exe	f82350f463e19ec2
+8	1691	7064241486267898	CMakeFiles/SFML_Game_Engine.dir/main.cpp.obj	4b53248cacff0e33
+21	2056	7064241489905069	CMakeFiles/SFML_Game_Engine.dir/Core/Window.cpp.obj	5a27612e5944e148
+31	2116	7064241490512607	CMakeFiles/SFML_Game_Engine.dir/Core/GameLoop.cpp.obj	b75fc8bbfad562b0
+2116	3411	7064241503359881	SFML_Game_Engine.exe	f82350f463e19ec2

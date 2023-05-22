@@ -5,11 +5,14 @@
 #ifndef SFML_GAME_ENGINE_EVENTMANAGER_H
 #define SFML_GAME_ENGINE_EVENTMANAGER_H
 
-#include <vector>
-#include <SFML/Window/Event.hpp>
+#include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
 #include <unordered_map>
+#include <vector>
 #include <functional>
-#include <SFML/Graphics/RenderWindow.hpp>
+#include <fstream>
+#include <sstream>
+#include <iostream>
 
 enum class EventType {
     KeyDown = sf::Event::KeyPressed,
@@ -35,7 +38,6 @@ struct EventInfo {
     };
 };
 
-using Events = std::vector<std::pair<EventType, EventInfo>>;
 
 struct EventDetails {
     EventDetails(const std::string& bindName) : eventName(bindName) {
@@ -55,9 +57,11 @@ struct EventDetails {
         textEntered = 0;
         mousePosition = sf::Vector2i(0, 0);
         mouseWheelDelta = 0;
-        keyCode = 0;
+        keyCode = -1;
     }
 };
+
+using Events = std::vector<std::pair<EventType, EventInfo>>;
 
 struct Binding {
     Binding(const std::string& bindingName) : name(bindingName), details(bindingName), numberOfBindings(0) {}
@@ -84,10 +88,11 @@ public:
 
     bool AddBinding(Binding *binding);
     bool RemoveBinding(std::string name);
-    void SetFocus(const bool& focus);
+
+    void SetFocus(const bool& focus) { hasFocus = focus; }
 
     template<class T>
-    bool AddCallback(const std::string& name, void(T::*function) (EventDetails*), T* instance) {
+    bool AddCallback(const std::string& name, void(T::*function)(EventDetails*), T* instance) {
         auto temp = std::bind(function, instance, std::placeholders::_1);
         return callbacks.emplace(name, temp).second;
     }

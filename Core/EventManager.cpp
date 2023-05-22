@@ -53,7 +53,6 @@ void EventManager::HandleEvent(sf::Event &event) {
                         bind->details.keyCode = eventItr.second.eventCode;
                     }
                     ++(bind->numberOfBindings);
-                    break;
                 }
             } else {
                 if (sfmlEvent == EventType::MouseWheel) {

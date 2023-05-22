@@ -1,7 +1,6 @@
 //
 // Created by Jake on 5/17/2023.
 //
-
 #include "Window.h"
 #include "EventManager.h"
 #ifndef SFML_GAME_ENGINE_GAMELOOP_H
@@ -16,11 +15,18 @@ public:
 
     void Update();
     void Render();
-    void HandleInput();
 
+    sf::Time GetElapsed() { return clock.getElapsedTime(); }
+    void RestartClock() { clock.restart();}
+
+    Window* GetWindow() { return &gameWindow; }
 private:
 
     Window gameWindow;
+    sf::Clock clock;
+
+    sf::Texture texture;
+    sf::Sprite sprite;
 
 };
 

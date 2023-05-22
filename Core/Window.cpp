@@ -2,29 +2,38 @@
 // Created by Jake on 5/17/2023.
 //
 
+#include <iostream>
 #include "Window.h"
 
 Window::Window() {
-    windowTitle = "Window";
-    windowSize = { 600, 800 };
-    bFullscreen = false;
-    Create();
+    Setup("Window", {600, 800}, false);
 }
 
 Window::Window(const std::string &title, sf::Vector2u size, bool fullscreen) {
+    Setup(title, size, fullscreen);
+}
+
+void Window::Setup(const std::string &title, sf::Vector2u size, bool fullscreen) {
     windowTitle = title;
     windowSize = size;
-    this->bFullscreen = fullscreen;
+    bFullscreen = fullscreen;
+
+    bIsDone = false;
+    bIsFocused = true;
+
+    eventManager.AddCallback("Fullscreen_toggle", &Window::ToggleFullScreen, this);
+    eventManager.AddCallback("Window_close", &Window::Close, this);
+
     Create();
 }
 
 void Window::Create() {
     auto style = bFullscreen ? sf::Style::Fullscreen : sf::Style::Default;
-    renderWindow.create({windowSize.x, windowSize.y, 32}, windowTitle, style);
+    renderWindow.create(sf::VideoMode(windowSize.x, windowSize.y, 32), windowTitle, style);
 }
 
 void Window::Update() {
-    sf::Event event{};
+    sf::Event event;
     while (renderWindow.pollEvent(event)) {
         if (event.type == sf::Event::LostFocus) {
             bIsFocused = false;
@@ -40,6 +49,6 @@ void Window::Update() {
 
 void Window::ToggleFullScreen(EventDetails* details) {
     bFullscreen = !bFullscreen;
-    Destroy();
+    renderWindow.close();
     Create();
 }
