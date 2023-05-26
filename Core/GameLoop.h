@@ -28,6 +28,22 @@ private:
     sf::Texture texture;
     sf::Sprite sprite;
 
+    sf::RectangleShape House;
+    sf::RectangleShape Door;
+    sf::RectangleShape Roof;
+    sf::RectangleShape RoofCut;
+
+    sf::CircleShape Hill;
+    sf::CircleShape Hill1;
+    sf::CircleShape Hill2;
+
+    sf::CircleShape Hill3;
+    sf::CircleShape Hill4;
+    sf::CircleShape Hill5;
+
+    sf::CircleShape Hill6;
+    sf::CircleShape Hill7;
+    sf::CircleShape Hill8;
 };
 
 
