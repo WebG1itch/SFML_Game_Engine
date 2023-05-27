@@ -1,6 +1,6 @@
 # Assignment 1
 
-To run the project, locate the `SFML_Game_Engine.exe` in the `cmake-build-debug` folder. Run this file with `keys.cfg` `smallSun.png` and `OpenSans-Regular.ttf` in the same folder to run the canvas properly. (Those three extra files are only required for the text and image to show, and for the mouse-click functionality to work). I suggest downloading the entire cmake-build-debug folder and running the executable from there.
+To run the project, locate the `SFML_Game_Engine.exe` in the `cmake-build-debug` folder. Run this file with `keys.cfg` `smallSun.png` and `OpenSans-Regular.ttf` in the same folder to run the canvas properly. (Those three extra files are only required for the text and image to show, and for the mouse-click functionality to work). I've created a zip folder `Assignemnt1Build.zip` that has everything needed to run everything. Simply unzip it and run the executable inside.
 
 You can try to build the project, but I personally think it would be quite difficult since I've setup cmake and SFML for my own system. 
 The main files for this program are `main.cpp`, `Core/GameLoop`, and `Core/Window`, however, all files in `/Core/` and `/Util/` are used. The rest of the files are for the game engine and game I'm building for the later assignments.
