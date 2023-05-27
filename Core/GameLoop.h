@@ -32,7 +32,7 @@ private:
 
     sf::RectangleShape House;
     sf::RectangleShape Door;
-    sf::RectangleShape Roof;
+    sf::CircleShape Roof;
     sf::RectangleShape RoofCut;
 
     sf::CircleShape Hill;
@@ -47,8 +47,11 @@ private:
     sf::CircleShape Hill7;
     sf::CircleShape Hill8;
 
+
     Textbox TheTextbox;
 
+
+    void MoveSun(EventDetails* details);
 };
 
 

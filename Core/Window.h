@@ -39,7 +39,6 @@ public:
     void Close(EventDetails* details = nullptr) { bIsDone = true; }
 
     sf::RenderWindow* GetRenderWindow() { return &renderWindow; }
-
 private:
     // Creates a new window with current properties
     void Create();

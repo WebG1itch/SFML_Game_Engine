@@ -24,6 +24,8 @@ void Window::Setup(const std::string &title, sf::Vector2u size, bool fullscreen)
     eventManager.AddCallback("Fullscreen_toggle", &Window::ToggleFullScreen, this);
     eventManager.AddCallback("Window_close", &Window::Close, this);
 
+
+
     Create();
 }
 
@@ -52,3 +54,4 @@ void Window::ToggleFullScreen(EventDetails* details) {
     renderWindow.close();
     Create();
 }
+
