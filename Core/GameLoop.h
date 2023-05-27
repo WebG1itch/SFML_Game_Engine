@@ -1,11 +1,13 @@
 //
 // Created by Jake on 5/17/2023.
 //
-#include "Window.h"
-#include "EventManager.h"
+
 #ifndef SFML_GAME_ENGINE_GAMELOOP_H
 #define SFML_GAME_ENGINE_GAMELOOP_H
 
+#include "Window.h"
+#include "EventManager.h"
+#include "../Util/Textbox.h"
 
 class GameLoop {
 
@@ -44,6 +46,9 @@ private:
     sf::CircleShape Hill6;
     sf::CircleShape Hill7;
     sf::CircleShape Hill8;
+
+    Textbox TheTextbox;
+
 };
 
 

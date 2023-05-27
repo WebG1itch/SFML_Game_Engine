@@ -81,6 +81,14 @@ build CMakeFiles/SFML_Game_Engine.dir/Core/EventManager.cpp.obj: CXX_COMPILER__S
   OBJECT_DIR = CMakeFiles\SFML_Game_Engine.dir
   OBJECT_FILE_DIR = CMakeFiles\SFML_Game_Engine.dir\Core
 
+build CMakeFiles/SFML_Game_Engine.dir/Util/Textbox.cpp.obj: CXX_COMPILER__SFML_Game_Engine_Debug C$:/Users/Jake/Documents/SFML$ Development/Projects/SFML_Game_Engine/Util/Textbox.cpp || cmake_object_order_depends_target_SFML_Game_Engine
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\SFML_Game_Engine.dir\Util\Textbox.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++1z
+  INCLUDES = -I"C:/Users/Jake/Documents/SFML Development/Projects/SFML_Game_Engine/headers" -I/usr/include -isystem C:/SFML/include
+  OBJECT_DIR = CMakeFiles\SFML_Game_Engine.dir
+  OBJECT_FILE_DIR = CMakeFiles\SFML_Game_Engine.dir\Util
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SFML_Game_Engine
@@ -89,7 +97,7 @@ build CMakeFiles/SFML_Game_Engine.dir/Core/EventManager.cpp.obj: CXX_COMPILER__S
 #############################################
 # Link the executable SFML_Game_Engine.exe
 
-build SFML_Game_Engine.exe: CXX_EXECUTABLE_LINKER__SFML_Game_Engine_Debug CMakeFiles/SFML_Game_Engine.dir/main.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Core/GameLoop.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Core/Window.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Core/EventManager.cpp.obj | C$:/SFML/lib/libsfml-audio-s-d.a C$:/SFML/lib/libsfml-network-s-d.a C$:/SFML/lib/libsfml-graphics-s-d.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libsfml-system-s-d.a C$:/SFML/lib/libopenal32.a C$:/SFML/lib/libvorbisfile.a C$:/SFML/lib/libvorbisenc.a C$:/SFML/lib/libvorbis.a C$:/SFML/lib/libogg.a C$:/SFML/lib/libFLAC.a C$:/SFML/lib/libfreetype.a
+build SFML_Game_Engine.exe: CXX_EXECUTABLE_LINKER__SFML_Game_Engine_Debug CMakeFiles/SFML_Game_Engine.dir/main.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Core/GameLoop.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Core/Window.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Core/EventManager.cpp.obj CMakeFiles/SFML_Game_Engine.dir/Util/Textbox.cpp.obj | C$:/SFML/lib/libsfml-audio-s-d.a C$:/SFML/lib/libsfml-network-s-d.a C$:/SFML/lib/libsfml-graphics-s-d.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libsfml-system-s-d.a C$:/SFML/lib/libopenal32.a C$:/SFML/lib/libvorbisfile.a C$:/SFML/lib/libvorbisenc.a C$:/SFML/lib/libvorbis.a C$:/SFML/lib/libogg.a C$:/SFML/lib/libFLAC.a C$:/SFML/lib/libfreetype.a
   FLAGS = -g
   LINK_LIBRARIES = C:/SFML/lib/libsfml-audio-s-d.a  C:/SFML/lib/libsfml-network-s-d.a  C:/SFML/lib/libsfml-graphics-s-d.a  C:/SFML/lib/libsfml-window-s-d.a  C:/SFML/lib/libsfml-system-s-d.a  C:/SFML/lib/libopenal32.a  C:/SFML/lib/libvorbisfile.a  C:/SFML/lib/libvorbisenc.a  C:/SFML/lib/libvorbis.a  C:/SFML/lib/libogg.a  C:/SFML/lib/libFLAC.a  -lws2_32  -lwinmm  -lgdi32  -lOpenGL32  C:/SFML/lib/libfreetype.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SFML_Game_Engine.dir

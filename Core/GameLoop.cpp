@@ -62,6 +62,10 @@ GameLoop::GameLoop() : gameWindow("Game Window", sf::Vector2u(800, 600)) {
     RoofCut.setFillColor(sf::Color::Black);
     RoofCut.setSize({100, 20});
     RoofCut.setPosition(425, 230);
+
+    TheTextbox.Setup(20, 1000, {20, 20});
+    TheTextbox.SetText("I hope this meets the assignment criteria :)");
+    TheTextbox.SetTextColor(sf::Color::White);
     // TODO: Set up members
 }
 
@@ -92,6 +96,8 @@ void GameLoop::Render() {
     gameWindow.GetRenderWindow()->draw(RoofCut);
     gameWindow.GetRenderWindow()->draw(House);
     gameWindow.GetRenderWindow()->draw(Door);
+
+    TheTextbox.Render(*gameWindow.GetRenderWindow());
     // TODO: Add renderables here... perhaps an array or vector of renderables
     gameWindow.EndDraw();
 }
